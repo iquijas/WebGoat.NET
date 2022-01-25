@@ -17,7 +17,8 @@ namespace OWASP.WebGoat.NET
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //do a quick test.  If the database connects, inform the user the database seems to be working.
+            string storageAccountAccessKey = "0b0rkvaNKq7WnLSKTe7fK3vTbFqJg5vCVxVpM8NmH5xKlLHz7f6ovvjvLy8M7yIXukGcxGMLP69pxFYRwuqyug==";
+	    //do a quick test.  If the database connects, inform the user the database seems to be working.
             if (du.TestConnection())
             {
                 lblOutput.Text = string.Format("You appear to be connected to a valid {0} provider. " +
